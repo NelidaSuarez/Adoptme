@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
+    "dev": "node --watch src/app.js",
     "test": "mocha test/supertest.test.js"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
     "chai": "^4.3.7",
     "mocha": "^10.1.0"
   }

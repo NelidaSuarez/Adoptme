@@ -1,35 +1,46 @@
-import { usersService } from "../services/index.js"
+import { generateUsersMock } from "../mocks/user.mock.js";
+import { UserServices } from "../services/user.services.js";
 
-const getAllUsers = async(req,res)=>{
-    const users = await usersService.getAll();
-    res.send({status:"success",payload:users})
-}
+export class UserControllers {
+  constructor() {
+    this.userServices = new UserServices();
+  }
 
-const getUser = async(req,res)=> {
+   createUserMock = async (req, res) => {
+    const user = generateUsersMock();
+    res.send(user);
+   }
+  
+
+  getAllUsers = async (req, res) => {
+    const users = await this.userServices.getAll();
+    console.log(users);
+    res.send({ status: "success", payload: users });
+  };
+
+  getUser = async (req, res) => {
     const userId = req.params.uid;
-    const user = await usersService.getUserById(userId);
-    if(!user) return res.status(404).send({status:"error",error:"User not found"})
-    res.send({status:"success",payload:user})
-}
+    const user = await this.userServices.getById(userId);
+    if (!user)
+      return res.status(404).send({ status: "error", error: "User not found" });
+    res.send({ status: "success", payload: user });
+  };
 
-const updateUser =async(req,res)=>{
+  updateUser = async (req, res) => {
     const updateBody = req.body;
     const userId = req.params.uid;
-    const user = await usersService.getUserById(userId);
-    if(!user) return res.status(404).send({status:"error", error:"User not found"})
-    const result = await usersService.update(userId,updateBody);
-    res.send({status:"success",message:"User updated"})
-}
+    const user = await this.userServices.getById(userId);
+    if (!user)
+      return res.status(404).send({ status: "error", error: "User not found" });
 
-const deleteUser = async(req,res) =>{
+    const result = await this.userServices.update(userId, updateBody);
+    res.send({ status: "success", message: "User updated" });
+  };
+
+  deleteUser = async (req, res) => {
     const userId = req.params.uid;
-    const result = await usersService.getUserById(userId);
-    res.send({status:"success",message:"User deleted"})
+    const result = await this.userServices.remove(userId);
+    res.send({ status: "success", message: "User deleted" });
+  };
 }
 
-export default {
-    deleteUser,
-    getAllUsers,
-    getUser,
-    updateUser
-}

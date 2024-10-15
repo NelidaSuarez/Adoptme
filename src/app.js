@@ -24,4 +24,4 @@ app.use('/api/sessions',sessionsRouter);
 app.use(errorHandle);
 
 
-app.listen(PORT,()=>console.log(`Listening on ${PORT}`))
+app.listen(PORT,()=>console.log(`Listening on ${PORT}🎇`))
