@@ -1,4 +1,7 @@
-import { adoptionsService, petsService, usersService } from "../services/index.js"
+import { adoptionsService, petsService } from "../services/index.js"
+import { UserServices } from "../services/user.services.js";
+
+const usersService = new UserServices();
 
 const getAllAdoptions = async(req,res)=>{
     const result = await adoptionsService.getAll();

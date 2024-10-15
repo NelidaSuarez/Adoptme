@@ -7,8 +7,9 @@ export class UserControllers {
   }
 
    createUserMock = async (req, res) => {
-    const user = generateUsersMock();
-    res.send(user);
+    
+    const users = await this.userServices.createMocks();
+    res.status(201).json({ status: "ok", users })
    }
   
 

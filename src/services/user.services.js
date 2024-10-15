@@ -1,4 +1,5 @@
 import Users from "../dao/Users.dao.js";
+import { generateUsersMock } from "../mocks/user.mock.js";
 
 
 export class UserServices {
@@ -25,6 +26,11 @@ export class UserServices {
   async remove(id) {
     await this.userDao.delete(id);
     return "ok";
+  }
+  async createMocks(){
+    const users = generateUsersMock(10);
+    const usersDb = await this.userDao.saveMany(users);
+    return usersDb;
   }
 
 }

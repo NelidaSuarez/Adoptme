@@ -1,15 +1,15 @@
 import { fakerES_MX as faker } from "@faker-js/faker";
 
-export const generateUsersMock = () => {
+export const generateUsersMock = ( amount ) => {
 
     const users = [];
 
-    for(let i = 0; i <= 10; i++){
+    for(let i = 0; i < amount; i++){
         const user = {
             first_name: faker.person.firstName(),
             last_name: faker.person.lastName(),
             email: faker.internet.email(),
-            password: faker.internet.password(),
+            password: "123",  //faker.internet.password(),(contraseña oculta)
             role: "user",
             pets: [],
           };
