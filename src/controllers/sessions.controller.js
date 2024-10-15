@@ -1,17 +1,17 @@
-//import { usersService } from "../services/index.js";
 import { createHash, passwordValidation } from "../utils/index.js";
 import jwt from 'jsonwebtoken';
 import UserDTO from '../dto/User.dto.js';
 import { UserServices } from "../services/user.services.js";
 
-const usersService = new UserServices();
+const usersService = new UserServices()
 
 const register = async (req, res) => {
     try {
         const { first_name, last_name, email, password } = req.body;
+        //console.log(req.body);
         if (!first_name || !last_name || !email || !password) return res.status(400).send({ status: "error", error: "Incomplete values" });
-        const exists = await usersService.getUserByEmail(email);
-        if (exists) return res.status(400).send({ status: "error", error: "User already exists" });
+        //const exists = await usersService.getUserByEmail(email);
+        //if (exists) return res.status(400).send({ status: "error", error: "User already exists" });
         const hashedPassword = await createHash(password);
         const user = {
             first_name,

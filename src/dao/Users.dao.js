@@ -8,15 +8,14 @@ export default class Users {
     }
 
     getBy = (params) =>{
-        return userModel.findOne(params);
+        return userModel.findById(params)
     }
 
     save = (doc) =>{
         return userModel.create(doc);
     }
-
     saveMany = (docs) =>{
-        return userModel.insertMany(docs);
+        return userModel.insertMany(docs)
     }
 
     update = (id,doc) =>{
