@@ -1,4 +1,4 @@
-import { customError } from "../errors/customs.error.js";
+import { customError } from "../errors/custom.error.js";
 import { generateUsersMock } from "../mocks/user.mock.js";
 import { UserServices } from "../services/user.services.js";
 

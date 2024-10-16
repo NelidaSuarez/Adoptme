@@ -1,4 +1,5 @@
 import { fakerES_MX as faker } from "@faker-js/faker";
+import { createHash } from "../utils/index.js";
 
 export const generateUsersMock = ( amount ) => {
 
@@ -9,8 +10,8 @@ export const generateUsersMock = ( amount ) => {
             first_name: faker.person.firstName(),
             last_name: faker.person.lastName(),
             email: faker.internet.email(),
-            password: "123",  //faker.internet.password(),(contraseña oculta)
-            role: "user",
+            password: createHash("coder123"),  //faker.internet.password(),(contraseña oculta)
+            role: faker.datatype.boolean,
             pets: [],
           };
           users.push(user);
