@@ -26,7 +26,7 @@ router.get("/mockingusers", async (req, res, next) => {
   }
 });
 
-router.get("/generateData/:cu/:cp", async (req, res) => {
+router.get("/generateData/:cu/:cp", async (req, res) => { //cu=cantidad usuarrio  y cp= cantidad de pets
   const { cu, cp } = req.params;
 
   const users = await generateUsersMock(Number(cu));
