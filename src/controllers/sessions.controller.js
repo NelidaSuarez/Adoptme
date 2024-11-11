@@ -79,14 +79,9 @@ export class SessionsController {
       try {
         const { first_name, last_name, email, password } = req.body;
         if (!first_name || !last_name || !email || !password)
-          return res
-            .status(400)
-            .send({ status: "error", error: "Incomplete values" });
+          return res.status(400).send({ status: "error", error: "Incomplete values" });
         const exists = await this.userServices.getByEmail(email);
-        if (exists)
-          return res
-            .status(400)
-            .send({ status: "error", error: "User already exists" });
+        if (exists) return res.status(400).send({ status: "error", error: "User already exists" });
         const hashedPassword = await createHash(password);
         const user = {
           first_name,
@@ -95,7 +90,7 @@ export class SessionsController {
           password: hashedPassword,
         };
         let result = await this.userServices.create(user);
-        res.status(201).json({ status: "success", payload: result });
+        res.status(201).json({ status: "success", payload: result._id });
       } catch (error) {
         next(error);
       }
@@ -104,25 +99,14 @@ export class SessionsController {
     login = async (req, res, next) => {
       try {
         const { email, password } = req.body;
-        if (!email || !password)
-          return res
-            .status(400)
-            .send({ status: "error", error: "Incomplete values" });
+        if (!email || !password) return res.status(400).send({ status: "error", error: "Incomplete values" });
         const user = await this.userServices.getByEmail(email);
-        if (!user)
-          return res
-            .status(404)
-            .send({ status: "error", error: "User doesn't exist" });
+        if (!user) return res.status(404).send({ status: "error", error: "User doesn't exist" });
         const isValidPassword = await passwordValidation(user, password);
-        if (!isValidPassword)
-          return res
-            .status(400)
-            .send({ status: "error", error: "Incorrect password" });
+        if (!isValidPassword) return res.status(400).send({ status: "error", error: "Incorrect password" });
         const userDto = UserDTO.getUserTokenFrom(user);
         const token = jwt.sign(userDto, "tokenSecretJWT", { expiresIn: "1h" });
-        res
-          .cookie("coderCookie", token, { maxAge: 3600000 })
-          .send({ status: "success", message: "Logged in" });
+        res.cookie("coderCookie", token, { maxAge: 3600000, httpOny: true }).send({ status: "success", message: "Logged in" }); //httpOny (solo puede viajar la cookie por http)
       } catch (error) {
         next(error);
       }
@@ -141,20 +125,11 @@ export class SessionsController {
     unprotectedLogin = async (req, res, next) => {
       try {
         const { email, password } = req.body;
-        if (!email || !password)
-          return res
-            .status(400)
-            .send({ status: "error", error: "Incomplete values" });
+        if (!email || !password) return res.status(400).send({ status: "error", error: "Incomplete values" });
         const user = await this.userServices.getUserByEmail(email);
-        if (!user)
-          return res
-            .status(404)
-            .send({ status: "error", error: "User doesn't exist" });
+        if (!user) return res.status(404).send({ status: "error", error: "User doesn't exist" });
         const isValidPassword = await passwordValidation(user, password);
-        if (!isValidPassword)
-          return res
-            .status(400)
-            .send({ status: "error", error: "Incorrect password" });
+        if (!isValidPassword) return res.status(400).send({ status: "error", error: "Incorrect password" });
         const token = jwt.sign(user, "tokenSecretJWT", { expiresIn: "1h" });
         res
           .cookie("unprotectedCookie", token, { maxAge: 3600000 })
