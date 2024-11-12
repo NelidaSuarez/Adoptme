@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser';
 
 import router from "./routes/index.js"
 import { errorHandle } from './errors/errHandle.js';
+import { logger } from "./utils/logger.js";
 
 const app = express();
 const PORT = process.env.PORT||8080;
@@ -19,4 +20,4 @@ app.use('/api',router);
 app.use(errorHandle);
 
 
-app.listen(PORT,()=>console.log(`Listening on ${PORT}🎇`))
+app.listen(PORT,()=>logger.info(`Listening on ${PORT}🥳🎇`));

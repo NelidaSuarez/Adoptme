@@ -8,35 +8,49 @@ const userServices = new UserServices();
 const petsServices = new PetServices();
 const router = Router();
 
-router.get("/mockingpets", async (req, res) => {
-  const pets = await generatePetsMock(100);
-  const response = await petsServices.createMany(pets);
-  res.status(201).json({ status: "ok", payload: response });
+router.get("/mockingpets", async (req, res, next) => {
+  try {
+    const pets = generatePetsMock(100);
+    const response = await petsServices.createMany(pets);
+    res.status(200).json({ status: "ok", payload: response });
+  } catch (error) {
+    error.path = "[GET] api/mocks/mockingpets";
+    next(error);
+  }
 });
 
 router.get("/mockingusers", async (req, res, next) => {
   try {
     const users = await generateUsersMock(50);
     const response = await userServices.createMany(users);
-
-    res.status(201).json({ status: "ok", payload: response });
+    res.status(200).json({ status: "ok", payload: response });
   } catch (error) {
     error.path = "[GET] api/mocks/mockingusers";
     next(error);
   }
 });
 
-router.get("/generateData/:cu/:cp", async (req, res) => { //cu=cantidad usuarrio  y cp= cantidad de pets
-  const { cu, cp } = req.params;
+router.get("/generateData/:cu/:cp", async (req, res, next) => {
+  try {
+    const { cu, cp } = req.params;
 
-  const users = await generateUsersMock(Number(cu));
-  const pets = generatePetsMock(Number(cp));
-  const usersResponse = await userServices.createMany(users);
-  const petsResponse = await petsServices.createMany(pets);
+    // Validate cu and cp
+    const userCount = Number(cu);
+    const petCount = Number(cp);
+    if (isNaN(userCount) || userCount <= 0 || isNaN(petCount) || petCount <= 0) {
+      return res.status(400).json({ status: "error", message: "Invalid parameters" });
+    }
 
-  res
-    .status(201)
-    .json({ status: "ok", payload: { usersResponse, petsResponse } });
+    const users = await generateUsersMock(userCount);
+    const pets = generatePetsMock(petCount);
+    const usersResponse = await userServices.createMany(users);
+    const petsResponse = await petsServices.createMany(pets);
+
+    res.status(200).json({ status: "ok", payload: { usersResponse, petsResponse } });
+  } catch (error) {
+    error.path = "[GET] api/mocks/generateData";
+    next(error);
+  }
 });
 
 export default router;

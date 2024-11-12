@@ -1,0 +1,22 @@
+24Y-11-12 11:20:36 [[32minfo[39m]: Listening on 8080🎇
+2024-11-12 11:20:55 [[32minfo[39m]: Listening on 8080🎇
+2024-11-12 11:23:54 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:28:11 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:28:33 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:29:30 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:29:54 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:31:56 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:32:10 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:32:14 [[31merror[39m]: Internal server error
+2024-11-12 11:33:00 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:34:25 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:34:32 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:34:36 [[31merror[39m]: Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
+2024-11-12 11:34:57 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:41:31 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:43:14 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:43:23 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:43:29 [[31merror[39m]: Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
+2024-11-12 11:44:24 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:44:27 [[31merror[39m]: [GET] api/mocks/generateData Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
+2024-11-12 11:45:01 [[32minfo[39m]: Listening on 8080🥳🎇
