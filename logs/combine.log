@@ -20,3 +20,27 @@
 2024-11-12 11:44:24 [[32minfo[39m]: Listening on 8080🥳🎇
 2024-11-12 11:44:27 [[31merror[39m]: [GET] api/mocks/generateData Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
 2024-11-12 11:45:01 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:57:42 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 11:57:45 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 12:24:08 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 12:24:10 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 12:31:36 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:14:57 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:20:46 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:22:35 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:22:44 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:23:14 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:24:38 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:27:26 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:38:53 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:38:57 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:43:19 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:44:22 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:44:44 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:45:06 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 13:45:44 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 14:11:12 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 15:34:29 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 15:34:32 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 15:42:45 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-12 16:19:46 [[32minfo[39m]: Listening on 8080🥳🎇
