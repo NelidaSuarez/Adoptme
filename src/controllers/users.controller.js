@@ -36,6 +36,7 @@ export class UserControllers {
     }
   };
 
+
   updateUser = async (req, res) => {
     const updateBody = req.body;
     const userId = req.params.uid;

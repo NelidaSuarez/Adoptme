@@ -29,3 +29,4 @@
 2024-11-13 17:49:39 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'nextId')
 2024-11-13 17:57:37 [[31merror[39m]: undefined Nuestro error
 2024-11-13 18:32:29 [[31merror[39m]: undefined Nuestro error
+2024-11-13 19:08:54 [[31merror[39m]: undefined this.userServices.getByEmail is not a function

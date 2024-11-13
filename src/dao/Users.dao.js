@@ -7,9 +7,9 @@ export default class Users {
         return userModel.find(params);
     }
 
-    getBy = (params) =>{
-        return userModel.findById(params)
-    }
+    getById = (id) => {
+        return userModel.findById(id);
+      };
 
     save = (doc) =>{
         return userModel.create(doc);
@@ -18,11 +18,11 @@ export default class Users {
         return userModel.insertMany(docs)
     }
 
-    update = (id,doc) =>{
-        return userModel.findByIdAndUpdate(id,{$set:doc})
-    }
+    update = (id, doc) => {
+        return userModel.findByIdAndUpdate(id, { $set: doc }, { new: true });
+      };
 
-    delete = (id) =>{
+      delete = (id) => {
         return userModel.findByIdAndDelete(id);
+      };
     }
-}
