@@ -1,0 +1,49 @@
+components:
+  schemas:
+    Users:
+      type: array
+      items:
+        properties:
+          _id: 
+            type: ObjectId
+            description: Id del usuario
+          first_name:
+            type: string
+            description: Nombre del usuario
+          last_name:
+            type: string
+            description: Nombre
+          email:
+            type: string
+            description: Email del usuario
+          role:
+            type: String
+            description: Rol del usuario          
+      example:
+        _id: 5f7e9f9b5f7e9f9b5f7e9f9b
+        first_name: Roberto
+        last_name: Sanchez
+        email: test01@gmail.com
+        role: Admin/User
+  requestBody:
+    userBody: 
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: Nombre del usuario
+        last_name:
+          type: string
+          description: Apellido del usuario
+        email:
+          type: string
+          description: Email del usuario
+        role: 
+          type: string 
+          description: Rol de usuario       
+      example:
+        first_name: Roberto
+        last_name: Sanchez
+        email: test01@gmail.com
+        role: Admin/User
+  

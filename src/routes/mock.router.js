@@ -10,7 +10,7 @@ const router = Router();
 
 router.get("/mockingpets", async (req, res, next) => {
   try {
-    const pets = generatePetsMock(100);
+    const pets = generatePetsMock(50);
     const response = await petsServices.createMany(pets);
     res.status(200).json({ status: "ok", payload: response });
   } catch (error) {

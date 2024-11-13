@@ -1,4 +1,4 @@
-import { customError } from "../errors/custom.error.js";
+import { customError, CustomError } from "../errors/custom.error.js";
 import { generateUsersMock } from "../mocks/user.mock.js";
 import { UserServices } from "../services/user.services.js";
 
@@ -9,8 +9,10 @@ export class UserControllers {
 
   createUserMock = async (req, res) => {
     const users = await this.userServices.createMocks();
+
     res.status(201).json({ status: "ok", users });
   };
+  
 
   getAllUsers = async (req, res, next) => {
     try {

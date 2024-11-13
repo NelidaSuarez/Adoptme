@@ -2,3 +2,29 @@
 2024-11-12 11:34:36 [[31merror[39m]: Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
 2024-11-12 11:43:29 [[31merror[39m]: Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
 2024-11-12 11:44:27 [[31merror[39m]: [GET] api/mocks/generateData Users validation failed: password: Path `password` is required., email: Path `email` is required., last_name: Path `last_name` is required., first_name: Path `first_name` is required.
+2024-11-13 09:50:54 [[31merror[39m]: undefined Nuestro error
+2024-11-13 11:56:45 [[31merror[39m]: undefined Nuestro error
+2024-11-13 11:56:47 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:26:55 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:27:41 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:27:46 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:31:06 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:33:11 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:33:37 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:36:12 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:38:39 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:38:40 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:41:49 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:49:56 [[31merror[39m]: undefined Nuestro error
+2024-11-13 12:50:38 [[31merror[39m]: undefined Nuestro error
+2024-11-13 13:08:28 [[31merror[39m]: undefined Nuestro error
+2024-11-13 13:08:29 [[31merror[39m]: undefined Nuestro error
+2024-11-13 13:09:16 [[31merror[39m]: undefined Nuestro error
+2024-11-13 13:29:44 [[31merror[39m]: undefined Nuestro error
+2024-11-13 13:30:32 [[31merror[39m]: undefined User id 670e867bfa0d7cb146b2c6ef not found
+2024-11-13 13:30:46 [[31merror[39m]: undefined Nuestro error
+2024-11-13 14:26:16 [[31merror[39m]: undefined Nuestro error
+2024-11-13 14:26:41 [[31merror[39m]: undefined Nuestro error
+2024-11-13 17:33:12 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-13 17:49:39 [[31merror[39m]: undefined Cannot read properties of undefined (reading 'nextId')
+2024-11-13 17:57:37 [[31merror[39m]: undefined Nuestro error

@@ -5,7 +5,7 @@ export const generatePetsMock = (amount) => {
   for (let i = 0; i < amount; i++) {
     const pet = {
       name: faker.person.firstName(),
-      specie: faker.animal.type(),
+      specie: faker.datatype.boolean() ? "Dog": "Cat",
       birthDate: faker.date.past(),
       adopted: false,
       image: faker.image.avatar(),
