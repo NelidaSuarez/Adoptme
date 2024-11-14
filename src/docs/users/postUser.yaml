@@ -14,7 +14,7 @@ paths:
                 $ref: "#/components/requestBody/userBody"
       responses:
         201:
-          description: New pet
+          description: New user
           content:
             application/json:
               schema:

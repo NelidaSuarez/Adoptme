@@ -16,7 +16,6 @@ export class UserControllers {
   getAllUsers = async (req, res, next) => {
     try {
       const users = await this.userServices.getAll();
-      throw new Error("Nuestro error");
       res.send({ status: "success", payload: users });
     } catch (error) {
       next(error);
@@ -44,7 +43,7 @@ export class UserControllers {
       return res.status(404).send({ status: "error", error: "User not found" });
 
     const result = await this.userServices.update(userId, updateBody);
-    res.send({ status: "success", message: "User updated" });
+    res.send({ status: "success",  payload: result });
   };
 
   deleteUser = async (req, res) => {

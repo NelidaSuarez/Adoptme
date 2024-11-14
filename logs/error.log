@@ -36,3 +36,8 @@
 2024-11-14 13:22:18 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
 2024-11-14 13:23:07 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
 2024-11-14 13:24:03 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 15:03:01 [[31merror[39m]: undefined Nuestro error
+2024-11-14 16:39:08 [[31merror[39m]: undefined this.userDao.getBy is not a function
+2024-11-14 16:39:35 [[31merror[39m]: undefined this.userDao.getBy is not a function
+2024-11-14 17:11:11 [[31merror[39m]: undefined Expected double-quoted property name in JSON at position 156
+2024-11-14 17:11:28 [[31merror[39m]: undefined Expected double-quoted property name in JSON at position 146

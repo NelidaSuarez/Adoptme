@@ -12,7 +12,7 @@ export class UserServices {
     return users;
   }
   async getById(id) {
-    const user = await this.userDao.getBy(id);
+    const user = await this.userDao.getById(id);
     if (!user) throw customError.notFoundError(`User id ${id} not found`);
     return user;
   }
@@ -40,7 +40,8 @@ export class UserServices {
     return "ok"; 
   }
   async createMocks() {
-    const users = generateUsersMock(10);
+    const users = await generateUsersMock(5);
+    console.log(users)
     const usersDb = await this.userDao.saveMany(users);
     return usersDb;
   }
