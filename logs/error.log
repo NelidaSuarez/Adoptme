@@ -33,3 +33,6 @@
 2024-11-14 10:01:42 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "25/02/1986" (type string) at path "birthDate"
 2024-11-14 10:02:10 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "25/02/1986" (type string) at path "birthDate"
 2024-11-14 12:42:28 [[31merror[39m]: birthDate Cast to date failed for value "25-30-2000" (type string) at path "birthDate"
+2024-11-14 13:22:18 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 13:23:07 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 13:24:03 [[31merror[39m]: undefined this.userServices.getByEmail is not a function

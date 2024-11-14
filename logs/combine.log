@@ -211,3 +211,25 @@
 2024-11-14 12:58:27 [[32minfo[39m]: Listening on 8080🥳🎇
 2024-11-14 12:59:14 [[32minfo[39m]: Listening on 8080🥳🎇
 2024-11-14 13:02:33 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:04:38 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:07:29 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:07:36 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:22:18 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 13:22:21 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:22:58 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:23:07 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 13:23:53 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:24:03 [[31merror[39m]: undefined this.userServices.getByEmail is not a function
+2024-11-14 13:24:39 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:26:41 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:28:37 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:31:35 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:58:44 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:15:23 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:15:26 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:17:12 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:18:41 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:20:15 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:21:21 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:28:26 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 14:29:41 [[32minfo[39m]: Listening on 8080🥳🎇

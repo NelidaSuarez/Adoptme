@@ -12,11 +12,11 @@ export class UserControllers {
 
     res.status(201).json({ status: "ok", users });
   };
-  
 
   getAllUsers = async (req, res, next) => {
     try {
       const users = await this.userServices.getAll();
+      throw new Error("Nuestro error");
       res.send({ status: "success", payload: users });
     } catch (error) {
       next(error);
@@ -35,7 +35,6 @@ export class UserControllers {
       next(error);
     }
   };
-
 
   updateUser = async (req, res) => {
     const updateBody = req.body;
