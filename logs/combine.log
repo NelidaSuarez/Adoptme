@@ -176,3 +176,38 @@
 2024-11-13 19:10:06 [[32minfo[39m]: Listening on 8080🥳🎇
 2024-11-13 20:14:28 [[32minfo[39m]: Listening on 8080🥳🎇
 2024-11-13 20:14:31 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 08:14:55 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 08:47:13 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 08:56:07 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 08:59:41 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:00:11 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:09:26 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:11:09 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:11:22 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:16:01 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:16:04 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:16:39 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:18:15 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:21:21 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:46:59 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 09:47:12 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:01:42 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "25/02/1986" (type string) at path "birthDate"
+2024-11-14 10:02:10 [[31merror[39m]: undefined Pets validation failed: birthDate: Cast to date failed for value "25/02/1986" (type string) at path "birthDate"
+2024-11-14 10:08:39 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:09:17 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:11:29 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:12:00 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:13:15 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:14:31 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:17:19 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 10:19:01 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:07:33 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:07:56 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:14:01 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:24:31 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:32:56 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:34:09 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:42:28 [[31merror[39m]: birthDate Cast to date failed for value "25-30-2000" (type string) at path "birthDate"
+2024-11-14 12:58:27 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 12:59:14 [[32minfo[39m]: Listening on 8080🥳🎇
+2024-11-14 13:02:33 [[32minfo[39m]: Listening on 8080🥳🎇

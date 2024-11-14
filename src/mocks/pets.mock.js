@@ -5,7 +5,7 @@ export const generatePetsMock = (amount) => {
   for (let i = 0; i < amount; i++) {
     const pet = {
       name: faker.person.firstName(),
-      specie: faker.datatype.boolean() ? "Dog": "Cat",
+      specie: Math.random() > 0.5 ? "Cat" : "Dog",  // 50% de probabilidad
       birthDate: faker.date.past(),
       adopted: false,
       image: faker.image.avatar(),

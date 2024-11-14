@@ -1,8 +1,7 @@
 import PetDTO from "../dto/Pet.dto.js";
 import __dirname from "../utils/index.js";
+
 import { PetServices } from "../services/pet.services.js";
-
-
 
 export class PetsController {
   constructor() {
@@ -35,7 +34,7 @@ export class PetsController {
       const petUpdateBody = req.body;
       const petId = req.params.pid;
       const result = await this.petService.update(petId, petUpdateBody);
-      res.send({ status: "success", message: "pet updated" });
+      res.send({ status: "success", payload: result});
     } catch (error) {
       next(error);
     }
@@ -56,7 +55,7 @@ export class PetsController {
       const file = req.file;
       const { name, specie, birthDate } = req.body;
       if (!name || !specie || !birthDate) return res.status(400).send({ status: "error", error: "Incomplete values" });
-      //console.log(file);
+      console.log(file);
       const pet = PetDTO.getPetInputFrom({
         name,
         specie,
