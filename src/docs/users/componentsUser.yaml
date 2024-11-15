@@ -13,9 +13,6 @@ components:
           last_name:
             type: string
             description: Nombre
-          email:
-            type: string
-            description: Email del usuario
           role:
             type: String
             description: Rol del usuario          
@@ -23,7 +20,6 @@ components:
         _id: 5f7e9f9b5f7e9f9b5f7e9f9b
         first_name: Roberto
         last_name: Sanchez
-        email: test01@gmail.com
         role: Admin/User
   requestBody:
     userBody: 
@@ -35,15 +31,11 @@ components:
         last_name:
           type: string
           description: Apellido del usuario
-        email:
-          type: string
-          description: Email del usuario
         role: 
           type: string 
           description: Rol de usuario       
       example:
         first_name: Roberto
         last_name: Sanchez
-        email: test01@gmail.com
         role: Admin/User
   
